@@ -25,6 +25,26 @@ public class Student {
         nextStudentId++;
     }
 
+    public void addGrade(int courseCredits, double grade) {
+        // Update the appropriate fields: numberOfCredits, gpa
+        // TODO - Fix this calculation
+        this.numberOfCredits += courseCredits;
+        this.gpa += (grade / courseCredits);
+
+    }
+
+    public String getGradeLevel() {
+
+        if (this.numberOfCredits > 63){
+            return "Senior";
+        }else if (this.numberOfCredits > 42) {
+            return "Junior";
+        }else if (this.numberOfCredits > 21){
+            return "Sophomore";
+        }else
+            return "Freshman";
+    }
+
     public static int getNextStudentId() {
         return nextStudentId;
     }
