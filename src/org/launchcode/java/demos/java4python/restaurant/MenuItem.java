@@ -4,10 +4,10 @@ public class MenuItem {
     private String name;
     private double price;
     private String description;
-    private int category;
+    private MenuCategory category;
     private boolean isNewItem;
 
-    public MenuItem(String name, double price, String description, int category, boolean newItem) {
+    public MenuItem(String name, double price, String description, MenuCategory category, boolean newItem) {
         this.name = name;
         this.price = price;
         this.description = description;
@@ -39,11 +39,11 @@ public class MenuItem {
         this.description = description;
     }
 
-    public int getCategory() {
+    public MenuCategory getCategory() {
         return category;
     }
 
-    public void setCategory(int category) {
+    public void setCategory(MenuCategory category) {
         this.category = category;
     }
 
