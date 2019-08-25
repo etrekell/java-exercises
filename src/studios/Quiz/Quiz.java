@@ -17,5 +17,5 @@ public class Quiz {
 
     }
 
-    MultipleChoiceQuestion mulitpleChoiceQuestion = new MultipleChoiceQuestion("How many corners does a square have?","4",1,squareChoices);
+//    MultipleChoiceQuestion mulitpleChoiceQuestion = new MultipleChoiceQuestion("How many corners does a square have?","4",1,squareChoices);
 }
